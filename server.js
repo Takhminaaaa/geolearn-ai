@@ -59,4 +59,6 @@ app.post("/api/tutor", async (req, res) => {
   }
 });
 app.get("/api/health", (_req, res) => res.json({ status: "ok", aiConfigured: Boolean(client) }));
-app.listen(port, () => console.log(`GeoLearn AI running on http://localhost:${port}`));
+app.listen(port, "0.0.0.0", () => {
+  console.log(`GeoLearn AI running on port ${port}`);
+});
