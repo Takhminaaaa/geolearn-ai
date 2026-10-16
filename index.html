@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoLearn AI — Geometry Tutor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">GeoLearn <span>AI</span></div>
+    <div class="tagline">Your personal geometry tutor</div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">AI-POWERED MATH PRACTICE</p>
+      <h1>Learn geometry.<br><span>Build confidence.</span></h1>
+      <p class="intro">Practice area and volume with tasks designed for your level. Get hints, step-by-step solutions, and helpful feedback.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Customize your practice</h2>
+
+      <div class="field-grid">
+        <div class="field">
+          <label for="topic">Topic</label>
+          <select id="topic">
+            <option value="area">Area of 2D shapes</option>
+            <option value="volume">Volume of 3D solids</option>
+            <option value="mixed" selected>Mixed geometry</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="level">Difficulty level</label>
+          <select id="level">
+            <option value="foundation">Foundation</option>
+            <option value="standard" selected>Standard</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </div>
+      </div>
+
+      <button id="generateBtn" class="primary">Generate a task ✨</button>
+      <p id="status" class="status" aria-live="polite">Choose your level and generate your first task.</p>
+    </section>
+
+    <section id="taskPanel" class="panel task-panel" hidden>
+      <div class="task-heading">
+        <div>
+          <p class="eyebrow">YOUR CHALLENGE</p>
+          <h2 id="taskTitle">Geometry task</h2>
+        </div>
+        <span id="levelBadge" class="badge">Standard</span>
+      </div>
+
+      <p id="problem" class="problem"></p>
+
+      <form id="answerForm">
+        <label for="answer">Your answer</label>
+        <div class="answer-row">
+          <input id="answer" type="text" placeholder="Type your answer here" autocomplete="off">
+          <button class="primary" type="submit">Check answer</button>
+        </div>
+      </form>
+
+      <div id="feedback" class="feedback" hidden></div>
+
+      <div class="actions">
+        <button id="hintBtn" class="secondary" type="button">💡 Get a hint</button>
+        <button id="solutionBtn" class="secondary" type="button">📘 Show solution</button>
+      </div>
+
+      <div id="hintBox" class="info-box" hidden></div>
+      <div id="solutionBox" class="info-box" hidden></div>
+    </section>
+
+    <section class="learning-grid">
+      <article class="mini-card">
+        <div class="mini-icon">▱</div>
+        <h3>Area</h3>
+        <p>Explore the space covered by 2D shapes.</p>
+        <code>Rectangle: A = l × w</code>
+      </article>
+      <article class="mini-card">
+        <div class="mini-icon">◇</div>
+        <h3>Volume</h3>
+        <p>Discover the space inside 3D objects.</p>
+        <code>Prism: V = l × w × h</code>
+      </article>
+      <article class="mini-card">
+        <div class="mini-icon">✦</div>
+        <h3>Learn your way</h3>
+        <p>Start simple or challenge yourself with advanced tasks.</p>
+        <code>Practice · Feedback · Improve</code>
+      </article>
+    </section>
+
+    <footer>GeoLearn AI · Learn at your own pace</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

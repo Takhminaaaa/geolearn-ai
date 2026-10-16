@@ -1,0 +1,11 @@
+# Brief Report: GeoLearn AI — AI for Differentiated Learning
+
+**Project aim.** GeoLearn AI is a web-based mathematics tutor for the topic *Geometry: Area and Volume*. It adapts a core geometry practice task to three difficulty levels and provides hints, solutions, and feedback. The interface is built with HTML, CSS, and JavaScript. A small Node.js/Express backend sends requests to an AI model so that the API key is not exposed in the browser.
+
+**Differentiation strategy.** Foundation tasks use familiar contexts, simple values, one main formula, direct hints, and a guided explanation. Standard tasks use curriculum-level problems and ask learners to select and apply an appropriate formula, sometimes over multiple calculation steps. Advanced tasks use composite shapes, reverse problems, or real-world multi-step applications. The learner selects the level and topic (Area, Volume, or Mixed Geometry), and the same tutor workflow adapts its output to that selection.
+
+**AI prompt design.** The system prompt defines the model as a careful geometry tutor, limits the scope to area and volume, requests valid JSON, and requires the model to check formulas and arithmetic. Level-specific instructions define the expected complexity and amount of scaffolding. Topic-specific instructions constrain the type of shape or solid. Separate prompts are used for generating a task, giving a hint without revealing the answer, explaining a solution step by step, and responding to a learner's submitted answer with constructive feedback.
+
+**Feedback and validation.** Learners can submit an answer, request a hint, or reveal a worked solution. The application gives immediate feedback and uses sample tasks if the API is unavailable. Because language models can make mathematical errors, generated tasks must be reviewed: the answer, units, formula, and worked solution should agree. Testing should include all three levels, each topic option, correct and incorrect answers, and API failure.
+
+**Conclusion.** The project demonstrates AI-supported differentiated learning by varying task complexity and guidance while keeping the mathematical topic consistent. It combines a responsive student-facing interface with a server-side AI integration and emphasizes checking mathematical correctness before classroom use.

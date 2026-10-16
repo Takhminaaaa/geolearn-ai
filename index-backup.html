@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1"><br></p>
+<p class="p2">&lt;!DOCTYPE html&gt;</p>
+<p class="p2">&lt;html lang="en"&gt;</p>
+<p class="p2">&lt;head&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;title&gt;GeoLearn AI — Geometry Tutor&lt;/title&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="style.css"&gt;</p>
+<p class="p2">&lt;/head&gt;</p>
+<p class="p2">&lt;body&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;header class="topbar"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;div class="brand"&gt;GeoLearn &lt;span&gt;AI&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;div class="tagline"&gt;Your personal geometry tutor&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
+<p class="p1"><br></p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;main class="container"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;section class="hero"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;p class="eyebrow"&gt;AI-POWERED MATH PRACTICE&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;h1&gt;Learn geometry.&lt;br&gt;&lt;span&gt;Build confidence.&lt;/span&gt;&lt;/h1&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;p class="intro"&gt;Practice area and volume with tasks designed for your level. Get hints, step-by-step solutions, and helpful feedback.&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><br></p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;section class="panel"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;h2&gt;Customize your practice&lt;/h2&gt;</p>
+<p class="p1"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;div class="field-grid"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;div class="field"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;label for="topic"&gt;Topic&lt;/label&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;select id="topic"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;option value="area"&gt;Area of 2D shapes&lt;/option&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;option value="volume"&gt;Volume of 3D solids&lt;/option&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;option value="mixed" selected&gt;Mixed geometry&lt;/option&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;/select&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;div class="field"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;label for="level"&gt;Difficulty level&lt;/label&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;select id="level"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;option value="foundation"&gt;Foundation&lt;/option&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;option value="standard" selected&gt;Standard&lt;/option&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span>&lt;option value="advanced"&gt;Advanced&lt;/option&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;/select&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;button id="generateBtn" class="primary"&gt;Generate a task ✨&lt;/button&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;p id="status" class="status" aria-live="polite"&gt;Choose your level and generate your first task.&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><br></p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;section id="taskPanel" class="panel task-panel" hidden&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;div class="task-heading"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;p class="eyebrow"&gt;YOUR CHALLENGE&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;h2 id="taskTitle"&gt;Geometry task&lt;/h2&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;span id="levelBadge" class="badge"&gt;Standard&lt;/span&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;p id="problem" class="problem"&gt;&lt;/p&gt;</p>
+<p class="p1"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;form id="answerForm"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;label for="answer"&gt;Your answer&lt;/label&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;div class="answer-row"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;input id="answer" type="text" placeholder="Type your answer here" autocomplete="off"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span>&lt;button class="primary" type="submit"&gt;Check answer&lt;/button&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;/form&gt;</p>
+<p class="p1"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;div id="feedback" class="feedback" hidden&gt;&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;div class="actions"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;button id="hintBtn" class="secondary" type="button"&gt;💡 Get a hint&lt;/button&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;button id="solutionBtn" class="secondary" type="button"&gt;📘 Show solution&lt;/button&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;div id="hintBox" class="info-box" hidden&gt;&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;div id="solutionBox" class="info-box" hidden&gt;&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><br></p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;section class="learning-grid"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;article class="mini-card"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;div class="mini-icon"&gt;▱&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;h3&gt;Area&lt;/h3&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;p&gt;Explore the space covered by 2D shapes.&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;code&gt;Rectangle: A = l × w&lt;/code&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;/article&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;article class="mini-card"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;div class="mini-icon"&gt;◇&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;h3&gt;Volume&lt;/h3&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;p&gt;Discover the space inside 3D objects.&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;code&gt;Prism: V = l × w × h&lt;/code&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;/article&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;article class="mini-card"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;div class="mini-icon"&gt;✦&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;h3&gt;Learn your way&lt;/h3&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;p&gt;Start simple or challenge yourself with advanced tasks.&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>&lt;code&gt;Practice · Feedback · Improve&lt;/code&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>&lt;/article&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><br></p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;footer&gt;GeoLearn AI · Learn at your own pace&lt;/footer&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;/main&gt;</p>
+<p class="p1"><br></p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;script src="script.js"&gt;&lt;/script&gt;</p>
+<p class="p2">&lt;/body&gt;</p>
+<p class="p2">&lt;/html&gt;</p>
+</body>
+</html>
